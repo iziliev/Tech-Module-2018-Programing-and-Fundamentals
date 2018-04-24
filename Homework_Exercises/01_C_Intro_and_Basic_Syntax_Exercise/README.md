@@ -25,7 +25,6 @@ examples below for the appropriate formatting.
 321       |
 123       |
 22        |
---------- | -------------------
 
 ### Problem 2. Rectangle Area
 
@@ -44,7 +43,6 @@ on the console, **formatted to the 2nd character after the decimal point**.
 **Input** | **Output**
 12.33     | 61.65
 5         |
---------- | ----------
 
 ### Problem 3. Miles to Kilometers
 
@@ -61,7 +59,6 @@ Note: **1mile == 1.60934 kilometers**
 1         | 1.61
 **Input** | **Output**
 52.1113   | 83.86
---------- | ----------
 
 ### Problem 4. Beverage Labels
 
@@ -79,7 +76,7 @@ for the **given volume** and print them on the console in the following format:
 #### Examples
 
 **Input**           | **Output**
-------------------- | ------------------------------------
+------------------- | -----------
 Nuka-Cola           | 220ml Nuka-Cola:660kcal, 154g sugars
 220                 | 
 300                 | 
@@ -94,7 +91,6 @@ Nuka-Cola Quantum   | 350ml Nuka-Cola Quantum:2100kcal, 490g sugars
 350                 |
 600                 |
 140                 |
-------------------- | ------------------------------------
 
 ### Problem 5. * Character Stats
 
@@ -104,29 +100,28 @@ health**, **current energy** and **maximum energy **on separate lines. The **cur
 **Input** | **Output**
 --------- | ----------
 Mayro     | Name: Mayro
-5         | Health: ||||||.....|
-10        | Energy: ||||||||||.|
+5         | Health: [||||||.....|]
+10        | Energy: [||||||||||.|]
 9         |
 10        |
 **Input** | **Output**
 Bauser    | Name: Bauser
-10        | Health: ||||||||||||
-10        | Energy: |||||||||||| 
+10        | Health: [||||||||||||]
+10        | Energy: [||||||||||||] 
 10        |
 10        |
 **Input** | **Output**
 Loogi     | Name: Loogi
-8         | Health: |||||||||............|
-20        | Energy: |||............|
+8         | Health: [|||||||||............|]
+20        | Energy: [|||............|]
 2         |
 14        |
 **Input** | **Output**
 Toad      | Name: Toad
-0         | Health: |.....|
-5         | Energy: |..........|
+0         | Health: [|.....|]
+5         | Energy: [|..........|]
 0         |
 10        |
---------- | ----------
 
 #### Hints
 · You can print a character **multiple** times, using new string(character, count).
