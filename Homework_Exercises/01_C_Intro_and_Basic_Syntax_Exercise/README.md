@@ -99,27 +99,27 @@ health**, **current energy** and **maximum energy **on separate lines. The **cur
 
 **Input** | **Output**
 --------- | ----------
-Mayro     | []()[Name: Mayro]()
-5         | []()[Health: ||||||.....|]()
-10        | []()[Energy: ||||||||||.|]()
+Mayro     | Name: Mayro
+5         | Health: //////...../
+10        | Energy: //////////./
 9         |
 10        |
 **Input** | **Output**
 Bauser    | Name: Bauser
-10        | [Health: ||||||||||||]
-10        | [Energy: ||||||||||||] 
+10        | Health: ////////////
+10        | Energy: ////////////
 10        |
 10        |
 **Input** | **Output**
 Loogi     | Name: Loogi
-8         | [Health: |||||||||............|]
-20        | [Energy: |||............|]
+8         | Health: /////////............/
+20        | Energy: ///............/
 2         |
 14        |
 **Input** | **Output**
 Toad      | Name: Toad
-0         | [Health: |.....|]
-5         | [Energy: |..........|]
+0         | Health: /...../
+5         | Energy: /........../
 0         |
 10        |
 
