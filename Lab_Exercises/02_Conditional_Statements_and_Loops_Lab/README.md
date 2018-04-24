@@ -247,7 +247,7 @@ Print every row of the table in the following format: {theInteger} X {times} = {
 
 **Input** | **Output**
 --------- | ----------
-5           5 X 1 = 5
+5         | 5 X 1 = 5
             5 X 2 = 10
             5 X 3 = 15
             5 X 4 = 20
@@ -259,7 +259,7 @@ Print every row of the table in the following format: {theInteger} X {times} = {
             5 X 10 = 50
 **Input** | **Output**
 --------- | ----------
-2           2 X 1 = 2
+2         | 2 X 1 = 2
             2 X 2 = 4
             2 X 3 = 6
             2 X 4 = 8
