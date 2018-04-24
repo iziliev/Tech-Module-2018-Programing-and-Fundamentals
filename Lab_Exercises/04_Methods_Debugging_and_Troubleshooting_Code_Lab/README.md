@@ -140,10 +140,7 @@ Draw at the console a filled square of size n like in the example:
 **Input** | **Output**
 --------- | ----------
 4         |
---------
--\/\/\/-
--\/\/\/-
---------
+-------- -\/\/\/- -\/\/\/- --------
 
 #### Hints
 
