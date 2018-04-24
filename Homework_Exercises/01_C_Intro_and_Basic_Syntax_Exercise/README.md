@@ -15,12 +15,12 @@ examples below for the appropriate formatting.
 433       |
 1         |
 5331      |
---------- | -------------------
+**Input** | **Output**
 9182      | 9182 4221 0012 0003
 4221      |
 12        |
 3         |
---------- | -------------------
+**Input** | **Output**
 812       | 0812 0321 0123 0022
 321       |
 123       |
@@ -38,10 +38,10 @@ on the console, **formatted to the 2nd character after the decimal point**.
 --------- | ----------
 2         | 14.00
 7         |
---------- | ----------
+**Input** | **Output**
 7         | 56.00
 8         |
---------- | ----------
+**Input** | **Output**
 12.33     | 61.65
 5         |
 --------- | ----------
@@ -57,9 +57,9 @@ Note: **1mile == 1.60934 kilometers**
 **Input** | **Output**
 --------- | ----------
 60        | 96.56
---------- | ----------
+**Input** | **Output**
 1         | 1.61
---------- | ----------
+**Input** | **Output**
 52.1113   | 83.86
 --------- | ----------
 
@@ -84,12 +84,12 @@ Nuka-Cola           | 220ml Nuka-Cola:660kcal, 154g sugars
 220                 | 
 300                 | 
 70                  |
-------------------- | ------------------------------------
+**Input**           | **Output**
 Ice Cold Nuka-Cola  | 250ml Ice Cold Nuka-Cola:875kcal, 162.5g sugars
 250                 |
 350                 |
 65                  |
-------------------- | ------------------------------------
+**Input**           | **Output**
 Nuka-Cola Quantum   | 350ml Nuka-Cola Quantum:2100kcal, 490g sugars
 350                 |
 600                 |
@@ -108,19 +108,19 @@ Mayro     | Name: Mayro
 10        | Energy: ||||||||||.|
 9         |
 10        |
---------- | ----------
+**Input** | **Output**
 Bauser    | Name: Bauser
 10        | Health: ||||||||||||
 10        | Energy: |||||||||||| 
 10        |
 10        |
---------- | ----------
+**Input** | **Output**
 Loogi     | Name: Loogi
 8         | Health: |||||||||............|
 20        | Energy: |||............|
 2         |
 14        |
---------- | ----------
+**Input** | **Output**
 Toad      | Name: Toad
 0         | Health: |.....|
 5         | Energy: |..........|
