@@ -27,7 +27,8 @@ Doctor | Tea
 Your program needs to get smarter. Now you will receive on the second line the []()[quantities ]()of the drink and you have to print the calculated the price. You can see the
 prices of the drinks in the table below:
 
-**Water** | **Coffee** | **Beer** | **Tea** 
+**Water** | **Coffee** | **Beer** | **Tea**
+--------- | ---------- | -------- | -------
 0.70 | 1.00 | 1.70 | 1.20
 
 #### Input
@@ -67,6 +68,7 @@ from the console and calculates **how much** the customer should **pay** to book
 Different halls have different prices:
 
 /|[]()[**Small Hall**]() | []()[**Terrace**]() | []()[**Great Hall**]()
+- | -------------------- | ------------------- | ----------------------
 **Price** | 2500$ | 5000$ | 7500$
 **Capacity** | 50 | 100 | 120
 
@@ -75,11 +77,11 @@ The restaurant has **discounts** depending on the **service package, **which the
 You can see the discounts in the table below:
 
 / | **Normal** | **Gold** | **Platinum**  
+- | ---------- | -------- | ------------
 **Discount** | 5% | 10% | 15%
 **Price** | 500$ | 750$ | 1000$
 
-You should **add **the** price **of the** package **to the** price **of the** hall**. The discount is calculated based on the **hall’s
-price + package’s price**.
+You should **add **the** price **of the** package **to the** price **of the** hall**. The discount is calculated based on the **hall’s price + package’s price**.
 
 Example: The group has **10 people** and wants the **gold package ****è $292.50 per person**:
 
