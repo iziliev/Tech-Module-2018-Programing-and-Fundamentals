@@ -174,201 +174,77 @@ the smaller array a few times.
 1 2 3 4 5 | 3 5 5 7 7
 2 3       | 1 2 3 4 5 + 2 3 2 3 2 = 3 5 5 7 7
 **Input** | **Output**
- 
-
-5 4 3
-
-2 3 1 4
-
- 
-
-7 7 4 9
-
- 
-
- 
-
-5 4 3 5 +
-
-2 3 1 4 +
-
-7 7 4 9
+5 4 3     | 7 7 4 9
+2 3 1 4   | 5 4 3 5 + 2 3 1 4 = 7 7 4 9
 
 #### Hints
 
-·        
-Assume the first array arr1 has len1 elements and the second arr2 has len2 elements.
+· Assume the first array arr1 has len1 elements and the second arr2 has len2 elements.
 
-·        
-The result array will havemax(len1, len2) elements.
+· The result array will havemax(len1, len2) elements.
 
-·        
-We sum array elements one by
-one (from the first to the last). To enable **rotating** (take the first element as next after the last), we use
-the position%length indexing: arr1[i%len1] and arr2[i%len2].
+· We sum array elements one by one (from the first to the last). To enable **rotating** (take the first element as next after the last), we use the position%length indexing: arr1[i%len1] and arr2[i%len2].
 
-### 8.  
-Condense
-Array to Number
+### 8. Condense Array to Number
 
-Write a
-program to read **an array of integers**
-and **condense** them by **summing** adjacent couples of elements
-until a **single integer** is obtained.
-For example, if we have 3 elements {2, 10, 3}, we sum the first two and the
-second two elements and obtain {2+10, 10+3} = {12, 13}, then we sum again all
-adjacent elements and obtain {12+13} = {25}.
+Write a program to read **an array of integers** and **condense** them by **summing** adjacent couples of elements until a **single integer** is obtained. For example, if we have 3 elements {2, 10, 3}, we sum the first two and the second two elements and obtain {2+10, 10+3} = {12, 13}, then we sum again all adjacent elements and obtain {12+13} = {25}.
 
 #### Examples
-
  
-
-**Input**
-
- 
-
-**Output**
-
- 
-
-**Comments**
-
- 
-
-2 10 3
-
- 
-
+**Input** | **Output**
+--------- | ----------
+2 10 3    | 2 10 3 à 2+10 10+3 à 12 13 à 12 + 13 à 25
 25
-
- 
-
-2 10 3 à 2+10 10+3 à 12 13 à 12 + 13 à 25
-
- 
-
-5 0 4 1 2
-
- 
-
+**Input** | **Output**
+5 0 4 1 2 | 5 0 4 1 2 à 5+0 0+4 4+1 1+2 à 5 4 5 3 à 5+4 4+5 5+3 à 9 9 8 à 9+9 9+8 à 18 17 à 18+17 à 35
 35
-
- 
-
-5 0 4 1 2 à 5+0 0+4 4+1 1+2 à 5 4 5 3 à 5+4 4+5 5+3 à 9 9 8 à 9+9 9+8 à 18 17 à 18+17 à 35
-
- 
-
+**Input** | **Output**
+1         | 1 is already condensed to number
 1
-
- 
-
-1
-
- 
-
-1 is already condensed to number
 
 #### Hints
 
-While we have more than one element in the
-array nums[],
-repeat the following:
+While we have more than one element in the array nums[], repeat the following:
 
-·        
-Allocate a new array condensed[] of size nums.Length-1.
+· Allocate a new array condensed[] of size nums.Length-1.
 
-·        
-Sum the numbers from nums[] to condensed[]:
+· Sum the numbers from nums[] to condensed[]:
 
-o  
-condensed[i] = nums[i] +
-nums[i+1]
+o condensed[i] = nums[i] + nums[i+1]
 
-·        
-nums[] = condensed[]
+· nums[] = condensed[]
 
 The process is illustrated below:
 
-### 9.  
-Extract
-Middle 1, 2 or 3 Elements
+### 9. Extract Middle 1, 2 or 3 Elements
 
-Write a
-method to extract the **middle****1**, **2**
-or **3****elements** from array of **n**
-integers and **print** them.
+Write a method to extract the **middle****1**, **2** or **3****elements** from array of **n** integers and **print** them.
 
-·        
-**n** = 1 -&gt; **1** element
+· **n** = 1 -&gt; **1** element
 
-·        
-even **n** -&gt; **2** elements
+· even **n** -&gt; **2** elements
 
-·        
-odd **n** -&gt; **3** elements
+· odd **n** -&gt; **3** elements
 
-Create a
-program that reads an **array of integers**
-(space separated values) and prints the middle elements in the format shown in
-the examples.
+Create a program that reads an **array of integers** (space separated values) and prints the middle elements in the format shown in the examples.
 
 #### Examples
 
- 
-
-**Input**
-
- 
-
-**Output**
-
- 
-
-**5**
-
- 
-
-{ 5 }
-
- 
-
-2 3 **8 1** 7 4
-
- 
-
-{ 8, 1 }
-
- 
-
-1 2 **3 4 5** 6 7
-
- 
-
-{ 3, 4, 5 }
-
- 
-
-10 20 30 **40 50** 60 70 80
-
- 
-
-{ 40, 50 }
+**Input** | **Output**
+--------- | ----------
+**5**     | { 5 }
+**Input** | **Output**
+2 3 **8 1** 7 4 | { 8, 1 }
+**Input** | **Output**
+1 2 **3 4 5** 6 7 | { 3, 4, 5 }
+10 20 30 **40 50** 60 70 80 | { 40, 50 }
 
 #### Hints
 
-o  
-Write different logic for each
-case (n = 1, even n, odd n)
+o Write different logic for each case (n = 1, even n, odd n)
 
-o  
-n = 1 à take
-the first element
+o n = 1 à take the first element
 
-o  
-odd n à take
-elements n/2-1, n/2, n/2+1
+o odd n à take elements n/2-1, n/2, n/2+1
 
-o  
-even n à take
-elements n/2-1 and n/2
+o even n à take elements n/2-1 and n/2
