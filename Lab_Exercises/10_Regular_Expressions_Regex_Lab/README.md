@@ -1,7 +1,6 @@
 ## Lab: Regular Expressions (RegEx)
 
-This document defines the homework assignments from the ["Programming Fundamentals" Course @ Software University](https://softuni.bg/courses/programming-fundamentals). Please submit your solutions (source code) of all below
-described problems in the [Judge System](https://judge.softuni.bg/Contests/452/Regex-Lab).
+This document defines the homework assignments from the ["Programming Fundamentals" Course @ Software University](https://softuni.bg/courses/programming-fundamentals). Please submit your solutions (source code) of all below described problems in the [Judge System](https://judge.softuni.bg/Contests/452/Regex-Lab).
 
 ### 1. Match Full Name
 
@@ -31,13 +30,11 @@ Check out how to use **character sets** (denoted with square brackets - "[]")
 
 Specify that you want **two words** with a space between them (the **space character '****'**, and **not** any whitespace symbol)
 
-For each word, specify that it should begin with an uppercase letter using a **character set**. The desired characters
-are in a range – **from **‘**A**’** to **‘**Z**’.
+For each word, specify that it should begin with an uppercase letter using a **character set**. The desired characters are in a range – **from **‘**A**’** to **‘**Z**’.
 
 For each word, specify that what follows the first letter are only **lowercase letters**, one or more – use another character set and the correct **quantifier**.
 
-To prevent capturing of letters across new lines, put "\b" at the beginning and at the end of your regex. This will ensure that what precedes
-and what follows the match is a word boundary (like a new line).
+To prevent capturing of letters across new lines, put "\b" at the beginning and at the end of your regex. This will ensure that what precedes and what follows the match is a word boundary (like a new line).
 
 In order to check your RegEx, use these values for reference (paste all of them in the **Test String** field):
 
@@ -167,8 +164,7 @@ Finally, we can just print the output, using string.Join():
 
 ### 4. Match Dates
 
-Write a program, which matches a date in the format “dd{separator}MMM{separator}yyyy”. Use **named****capturing groups **in your regular
-expression.
+Write a program, which matches a date in the format “dd{separator}MMM{separator}yyyy”. Use **named****capturing groups **in your regular expression.
 
 #### Compose the Regular Expression
 
@@ -196,16 +192,13 @@ Since this problem requires more complex RegEx, which includes **named capturing
 
 First off, we don’t want anything at the **start** of our date, so we’re going to use a **word boundary **“\b”:  
 
-Next, we’re going to match the **day**, by telling our RegEx to match **exactly two digits**,and since we want to **extract** the day from the match later,
-we’re going to put it in a **capturing group**:  
+Next, we’re going to match the **day**, by telling our RegEx to match **exactly two digits**,and since we want to **extract** the day from the match later, we’re going to put it in a **capturing group**:  
   
 We’re also going to give our group a **name**, since it’s easier to navigate by **group name** than by **group index**:  
 
 Next comes the separator – either a **hyphen**, **period** or **forward slash**. We can use a **character class** for this:  
   
-
-Since we want to use the separator we matched here to match the **same separator** further into the date, we’re going to put it in a **capturing
-group**:  
+Since we want to use the separator we matched here to match the **same separator** further into the date, we’re going to put it in a **capturing group**:  
 
 Next comes the **month**, which consists of a** capital Latin letter **and **exactly two lowercase Latin letters**:
 
@@ -221,11 +214,9 @@ Now it’s time to find all the **valid dates** in the input and **print each da
 
 First off, we’re going to put our RegEx in a variable and get a MatchCollection from the string:
 
-Since RegEx works differently across different languages, before we continue, we’re going to **set our backreference from **\2** to **\1. This is because **C# backreferences** don’t count **named capture groups for backreferences**.
-So, **change it before we continue**.
+Since RegEx works differently across different languages, before we continue, we’re going to **set our backreference from **\2** to **\1. This is because **C# backreferences** don’t count **named capture groups for backreferences**. So, **change it before we continue**.
 
-Next, we’re going to **iterate **over every single Match and **extract **the **day**, **month** and **year** from the **groups**. We can use a special syntax in
-C# to get a match’s group **value** by its **key**, the **same way** as when we access a Dictionary’s values:
+Next, we’re going to **iterate **over every single Match and **extract **the **day**, **month** and **year** from the **groups**. We can use a special syntax in C# to get a match’s group **value** by its **key**, the **same way** as when we access a Dictionary’s values:
 
 #### Examples
 
@@ -241,8 +232,7 @@ Write a program, which finds all** integer **and** floating-point numbers **in a
 
 A number has the following characteristics:
 
-Has either **whitespace** before it or the **start** of the string (match either **^** or what’s called a [positive lookbehind](http://www.regular-expressions.info/lookaround.html)).
-The entire syntax for the **beginning** of your **RegEx** might look something like “(^|(?&lt;=\s))”.
+Has either **whitespace** before it or the **start** of the string (match either **^** or what’s called a [positive lookbehind](http://www.regular-expressions.info/lookaround.html)). The entire syntax for the **beginning** of your **RegEx** might look something like “(^|(?&lt;=\s))”.
 
 The number might or might not be negative, so it might have a hyphen on its left side (“-“).
 
@@ -252,13 +242,11 @@ Might or might not have **digits after the****decimal point**
 
 The decimal part (if it exists) consists of a period (“.”) and **one or more digits** after it. Use a **capturing group**.
 
-Has either **whitespace** before it or the **end** of the string (match either **$** or what’s called a [positive lookahead](http://www.regular-expressions.info/lookaround.html)).
-The syntax for the **end** of the **RegEx** might look something like “($|(?=\s))”.
+Has either **whitespace** before it or the **end** of the string (match either **$** or what’s called a [positive lookahead](http://www.regular-expressions.info/lookaround.html)). The syntax for the **end** of the **RegEx** might look something like “($|(?=\s))”.
 
 Let’s see how we would translate the above rules into a **regular expression**:
 
-First off, we need to establish what needs to exist **before** our number. We can’t use \b here, since it includes “-“, which we need to match **negative
-numbers**.   
+First off, we need to establish what needs to exist **before** our number. We can’t use \b here, since it includes “-“, which we need to match **negative numbers**.   
 
 Instead, we’ll use a **positive lookbehind**, which **matches** if there’s something **immediately behind** it. We’ll match if
 we’re either at the **start** of the string (^), or if there’s any **whitespace****behind** the string:  
@@ -269,12 +257,10 @@ Since having a negative sign** isn’t required**, we’ll use the “?” quant
 
 After that, we’ll match any integers – naturally, consisting **one or more digits**:  
 
-Next, we’ll match the **decimal** part of the number, which **might or might not exist **(note: we need to escape the **period** character, as
-it’s used for something else in RegEx):  
+Next, we’ll match the **decimal** part of the number, which **might or might not exist **(note: we need to escape the **period** character, as it’s used for something else in RegEx):  
  
 
-Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the
-string (“**$**”)**:  
+Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string (“**$**”)**:  
 
 You can follow the table below to help with composing your RegEx:
 
@@ -298,8 +284,7 @@ After that, it’s only a matter of printing the numbers, separated by spaces:
 
 ### 6. Replace &lt;a&gt; Tag
 
-Write a programthat replaces in a HTML document given as string **all the tags **&lt;a href=…&gt;…&lt;/a&gt; with corresponding **tags **[URL href=…&gt;…[/URL].Read an
-input, until you receive the **“**end”** command**. **Print** the lines on the **console**, but with the &lt;a&gt; tags replaced.
+Write a programthat replaces in a HTML document given as string **all the tags **&lt;a href=…&gt;…&lt;/a&gt; with corresponding **tags **[URL href=…&gt;…[/URL].Read an input, until you receive the **“**end”** command**. **Print** the lines on the  **console**, but with the &lt;a&gt; tags replaced.
 
 #### Examples
 
