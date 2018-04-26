@@ -320,16 +320,6 @@ XTGAX XTGCX XTGGX OTGTO
 
 XTTAX XTTCX OTTGO OTTTO
 
-Combinations, where “sum &gt;= 11”:
-
-GTT è 3+4+4 è 11
-
-TGT è 4+3+4 è 11
-
-TTG è 4+4+3 è 11
-
-TTT è 4+4+4 è 12
-
 **Input** | **Output**
 --------- | ----------
 10        |
@@ -365,28 +355,6 @@ XTCAX XTCCX XTCGX OTCTO
 XTGAX XTGCX OTGGO OTGTO
 
 XTTAX OTTCO OTTGO OTTTO
-
-Combinations, where “sum &gt;= 10”:
-
-CTT è 2+4+4 è 10
-
-GGT è 3+3+4 è 10
-
-GTG è 3+4+3 è 10
-
-GTT è 3+4+4 è 11
-
-TCT è 4+2+4 è 10
-
-TGG è 4+3+3 è 10
-
-TGT è 4+3+4 è 11
-
-TTC è 4+4+2 è 10
-
-TTG è 4+4+3 è 11
-
-TTT è 4+4+4 è 12
 
 ### Problem 7. Training Hall Equipment
 
@@ -531,8 +499,10 @@ Print all the characters together, forming a **text message string**.
 
 · A cleverer approach would be to come up with a **mathematical formula**, which **converts** a **number** to its **alphabet** representation:
 
-**Digit** | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+**Digit** | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
+
 **Index**| 0 1 2 | 3 4 5 | 6 7 8 | 9 11 12 | 13 14 15 | 16 17 18 19 | 20 21 22 | 23 24 25 26
+
 **Letter**| a b c | d e f | g h i | j  k  l | m  n  o | p  q  r  s | t u v | w  x  y  z
 
 · Let’s take the number **222** (**c**) for example. Our algorithm would look like this:
