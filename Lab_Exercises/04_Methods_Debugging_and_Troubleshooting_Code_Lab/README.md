@@ -41,8 +41,7 @@ execute:
 
 2. Do the same for printing the receipt body and footer.
 
-3. Create a **method that will call all three methods** in the necessary order. Again, give it a **meaningful and descriptive name** like "PrintReceipt"
-and write the code:
+3. Create a **method that will call all three methods** in the necessary order. Again, give it a **meaningful and descriptive name** like "PrintReceipt" and write the code:
 
 4. For printing **"©" **use Unicode **"\u00A9"**
 
@@ -57,9 +56,7 @@ Create a method that prints the sign of an integer number n.
 **Input** | **Output**
 --------- | ----------
 2         | The number 2 is positive.
-**Input** | **Output**
 -5        | The number -5 is negative.
-**Input** | **Output**
 0         | The number 0 is zero.
 
 #### Hints
@@ -87,13 +84,9 @@ Create a method for printing triangles as shown below:
 3         |
 
 1
-
 1 2
-
 1 2 3
-
 1 2
-
 1
 
 **Input** | **Output**
@@ -101,17 +94,11 @@ Create a method for printing triangles as shown below:
 4         |
 
 1
-
 1 2
-
 1 2 3 
-
 1 2 3 4
-
 1 2 3
-
 1 2
-
 1
 
 #### Hints
@@ -140,7 +127,7 @@ Draw at the console a filled square of size n like in the example:
 **Input** | **Output**
 --------- | ----------
 4         |
--------- -\/\/\/- -\/\/\/- --------
+
 
 #### Hints
 
@@ -165,9 +152,7 @@ Create a method that converts a temperature from **Fahrenheit** to **Celsius**. 
 **Input** | **Output**
 --------- | ----------
 95        | 35.00
-**Input** | **Output**
 33.8      | 1.00
-**Input** | **Output**
 -40       | -40.00
 
 #### Hints
@@ -207,7 +192,6 @@ Create a method that calculates and returns the value of a number raised to a gi
 --------- | ---------- 
 2         | 256
 8
-**Input** | **Output**
 3         | 81
 4
 
@@ -230,11 +214,9 @@ You are given two values of the same type as input. The values can be of type in
 int       | 16
 2
 16
-**Input** | **Output**
 char      | z
 a
 z
-**Input** | **Output**
 string    | Todor
 Ivan
 Todor
@@ -247,9 +229,7 @@ Todor
 
 3. Create a second method with the same name which will compare characters. Follow the logic of the previous method:
 
-4. Lastly you need to create a method to compare strings. This is a bit different as strings don't allow to be compared with the operators &gt; and &lt; 
-You need to use the method "CompareTo()", which returns an integer value (greater than zero if the compared object is greater, less than zero if the compared object is lesser
-and zero if the two objects are equal.
+4. Lastly you need to create a method to compare strings. This is a bit different as strings don't allow to be compared with the operators &gt; and &lt; You need to use the method "CompareTo()", which returns an integer value (greater than zero if the compared object is greater, less than zero if the compared object is lesser and zero if the two objects are equal.
 
 5. The last step is to read the input, use appropriate variables and call the GetMax() from your Main(): 
 
@@ -265,18 +245,15 @@ Create a program that reads an **integer number** and **multiplies the sum of al
 --------- | ----------
 12345     | 54
 
-12345 has **2 even digits** - 2 and 4. Even digits has **sum of 6**.
-Also it has **3 odd digits** - 1, 3 and 5. Odd digits has **sum of 9**.
-**Multiply 6 by 9** and you get **54**.
+12345 has **2 even digits** - 2 and 4. Even digits has **sum of 6**. Also it has **3 odd digits** - 1, 3 and 5. Odd digits has **sum of 9**. **Multiply 6 by 9** and you get **54**.
 
 **Input** | **Output**
 --------- | ----------
--12345     | 54 
+-12345    | 54 
 
 #### Hints
 
-1. Create a method with a **name describing its purpose** (like GetMultipleOfEvensAndOdds). The method should have a **single integer parameter** and an**
-integer return value**. Also the method will call two other methods:
+1. Create a method with a **name describing its purpose** (like GetMultipleOfEvensAndOdds). The method should have a **single integer parameter** and an** integer return value**. Also the method will call two other methods:
 
 2. Create two other methods each of which will sum either even or odd digits
 
@@ -291,15 +268,14 @@ integer return value**. Also the method will call two other methods:
 You are assigned to **find and fix the bugs** in an existing piece of code, using the Visual Studio **debugger**. You should
 trace the program execution to find the lines of code that produce incorrect or unexpected results.
 
-You are given a program (existing **source code**) that aims to **count the non-working days between two dates** given in format day.month.year (e.g. between **1.05.2015** and
-**15.05.2015** there are **5** non-working days – Saturday and Sunday).
+You are given a program (existing **source code**) that aims to **count the non-working days between two dates** given in format day.month.year (e.g. between **1.05.2015** and **15.05.2015** there are **5** non-working days – Saturday and Sunday).
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
 1.05.2016 | 5
-15.05.2016 |
+15.05.2016|
 
 There are 5 non-working days (Saturday / Sunday) in this period: 1-May-2016, 7-May-2016, 8-May-2016, 14-May-2016, 15-May-2016
 
@@ -312,15 +288,15 @@ Only 1 non-working day in the specified period: 1.05.2016 (Sunday)
 
 **Input** | **Output**
 --------- | ----------
-15.05.2020 | 0
-10.05.2020 | 
+15.05.2020| 0
+10.05.2020| 
 
 The second date is before the first. No dates in the range.
 
 **Input** | **Output**
 --------- | ----------
 22.2.2020 | 4
-1.3.2020 |  
+1.3.2020  |  
 
 TwoSaturdays and Sundays:
 · 22.02.2020 and 23.02.2020
@@ -328,24 +304,26 @@ TwoSaturdays and Sundays:
 
 You can **find the broken code** in the judge system: [Broken Code for Refactoring](http://softuni.bg/downloads/svn/soft-tech/Sep-2016/Programming-Fundamentals-Sep-2016/03.%20Programming-Fundamentals-Methods-Debugging-and-Troubleshooting-Code/03.Programming-Fundamentals-Methods-and-Debugging-Lab-Broken-Solutions.zip). It looks as follows:
 
-HolidaysBetweenTwoDates.cs
-using System;
-using System.Globalization;
-classHolidaysBetweenTwoDates
-{
-    staticvoid Main()
+    HolidaysBetweenTwoDates.cs
+    using System;
+    using System.Globalization;
+    classHolidaysBetweenTwoDates
     {
-        var startDate = DateTime.ParseExact(Console.ReadLine(),"dd.m.yyyy", CultureInfo.InvariantCulture);
-        var endDate = DateTime.ParseExact(Console.ReadLine(),"dd.m.yyyy", CultureInfo.InvariantCulture);
-        var holidaysCount = 0;
+        staticvoid Main()
+        {
+            var startDate = DateTime.ParseExact(Console.ReadLine(),"dd.m.yyyy", CultureInfo.InvariantCulture);
+            var endDate = DateTime.ParseExact(Console.ReadLine(),"dd.m.yyyy", CultureInfo.InvariantCulture);
+            var holidaysCount = 0;
 
-        for (var date = startDate; date &lt;= endDate; date.AddDays(1))
-            if (date.DayOfWeek == DayOfWeek.Saturday && date.DayOfWeek == DayOfWeek.Sunday) {
-              holidaysCount++;
-              Console.WriteLine(holidaysCount);
-    }
+            for (var date = startDate; date &lt;= endDate; date.AddDays(1))
+                if (date.DayOfWeek == DayOfWeek.Saturday && date.DayOfWeek == DayOfWeek.Sunday) 
+                {
+                    holidaysCount++;
+                    Console.WriteLine(holidaysCount);
+                }
 
-}
+         }
+     }
 
 #### Hints
 
@@ -355,8 +333,7 @@ There are **4****mistakes** in the code. You’ve got to **use the debugger** to
 
 You are assigned to **rework a given piece of code** which is working **without bugs** but is **not properly formatted**. 
 
-The given program **tracks stock prices **and **gives updates** about the **significance in each price change**. Based on the significance, there are **four kind of changes**: no change at all
-(price is equal to the previous), minor (difference is below the significance threshold), price up and price down. 
+The given program **tracks stock prices **and **gives updates** about the **significance in each price change**. Based on the significance, there are **four kind of changes**: no change at all (price is equal to the previous), minor (difference is below the significance threshold), price up and price down. 
 
 You can **find the broken code**here: [Broken Code for Refactoring](http://softuni.bg/downloads/svn/soft-tech/Sep-2016/Programming-Fundamentals-Sep-2016/03.%20Programming-Fundamentals-Methods-Debugging-and-Troubleshooting-Code/03.Programming-Fundamentals-Methods-and-Debugging-Lab-Broken-Solutions.zip).
 
@@ -376,8 +353,7 @@ You can **find the broken code**here: [Broken Code for Refactoring](http://softu
 
 · In case of **minor change**: "MINOR CHANGE: {last price} to {current price} ({difference}%)"
 
-· In case of **major change**: "PRICE UP: {last price} to {current price} ({difference}%)" or "PRICE DOWN: {last price} to {current price}
-({difference}%)"
+· In case of **major change**: "PRICE UP: {last price} to {current price} ({difference}%)" or "PRICE DOWN: {last price} to {current price} ({difference}%)"
 
 The percentage should be rounded to the second digit after the decimal point.
 
@@ -391,6 +367,7 @@ The percentage should be rounded to the second digit after the decimal point.
 11
 12
 **Input** | **Output**
+--------- | ----------
 3         | NO CHANGE: 10
 0.1       | PRICE UP: 10 to 12 (20.00%)
 10
@@ -406,5 +383,3 @@ The percentage should be rounded to the second digit after the decimal point.
 3. Fix method parameters naming
 
 4. Give methods a proper name
-
- 
