@@ -25,19 +25,19 @@ Enter a **day number** [1…7] and print the **day name** (in English) or “**I
 
 ### 2.Reverse an Array of Integers
 
-Write a program to read **an array of integers**, **reverse** it and **print** its elements. The input consists of a **number**n (the number of elements) + n integers, each as a separate line. Print the output on a single
-line (space separated).
+Write a program to read **an array of integers**, **reverse** it and **print** its elements. The input consists of a **number**n (the number of elements) + n integers, each as a separate line. Print the output on a single line (space separated).
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
-**3**     | 30 20 10
+3     | 30 20 10
 10
 20
 30
 **Input** | **Output**
-**4**     | 5 99 20 -1
+--------- | ----------
+4     | 5 99 20 -1
 -1
 20
 99
@@ -61,7 +61,7 @@ Enter two integers **n** and **k**. Generate and print the following sequence of
 
 · All other elements = sum of the previous **k** elements (if less than **k** are available, sum all of them)
 
-· Example: n = **9**, k = **5**à**120** = 4 + 8 + 16 + 31 + 61
+· Example: n = 9, k = 5, 120 = 4 + 8 + 16 + 31 + 61
 
 #### Examples
 
@@ -69,10 +69,8 @@ Enter two integers **n** and **k**. Generate and print the following sequence of
 --------- | ---------- 
 6         | 1 1 2 4 7 13
 3
-**Input** | **Output**
 8         | 1 1 2 3 5 8 13 21
 2
-**Input** | **Output**
 9         | 1 1 2 4 8 16 31 61 120
 5
 
@@ -84,9 +82,9 @@ Enter two integers **n** and **k**. Generate and print the following sequence of
 
 · Use two nested loops:
 
-o Loop through all elements i = **1 … **n
+o Loop through all elements i = 1 … n
 
-o Sum the elements i**-k … **i**-1**: seq[i] = sum(seq[i**-k … **i**-1**])
+o Sum the elements i-k … i-1: seq[i] = sum(seq[i-k … i-1])
 
 ### 4.Triple Sum
 
@@ -111,8 +109,7 @@ Write a program to read **an array of integers** and find all triples of element
 
 ### 5. Rounding Numbers Away from Zero
 
-Write a program to read **an array of real numbers** (space separated values), **round** them to the nearest integer in “**away from 0**”
-style and **print** the output as in the examples below.
+Write a program to read **an array of real numbers** (space separated values), **round** them to the nearest integer in “**away from 0**” style and **print** the output as in the examples below.
 
 Rounding in “[away from zero](https://www.mathsisfun.com/numbers/rounding-methods.html)” style means:
 
@@ -129,16 +126,13 @@ Rounding in “[away from zero](https://www.mathsisfun.com/numbers/rounding-meth
 
 #### Hints:
 
-·**Approach I**: Take the **absolute value** of each input number, add **0.5** and **truncate** the integral part. If the original number is negative,
-make the result also negative.
+·**Approach I**: Take the **absolute value** of each input number, add **0.5** and **truncate** the integral part. If the original number is negative, make the result also negative.
 
-· **Approach II**: **Search in Internet** for **“rounding away from zero” + C#**. You should find a built-in C# method for rounding in
-many styles. Choose the “away from zero” rounding.
+· **Approach II**: **Search in Internet** for **“rounding away from zero” + C#**. You should find a built-in C# method for rounding in many styles. Choose the “away from zero” rounding.
 
 ### 6.Reverse an Array of Strings
 
-Write a program to read **an array of strings**, **reverse** it and **print** its elements. The input consists of a sequence of space
-separated strings. Print the output on a single line (space separated).
+Write a program to read **an array of strings**, **reverse** it and **print** its elements. The input consists of a sequence of space separated strings. Print the output on a single line (space separated).
 
 #### Examples
 
@@ -161,8 +155,7 @@ a b c d e | e d c b a
 
 ### 7. Sum Arrays
 
-Write a program that reads two **arrays of integers** and sums them. When the arrays are not of the same size, duplicate
-the smaller array a few times.
+Write a program that reads two **arrays of integers** and sums them. When the arrays are not of the same size, duplicate the smaller array a few times.
 
 #### Examples
 
@@ -170,10 +163,14 @@ the smaller array a few times.
 --------- | ----------  
 1 2 3 4   | 3 5 7 9
 2 3 4 5   | 1 2 3 4 + 2 3 4 5 = 3 5 7 9
+
 **Input** | **Output**
+--------- | ----------  
 1 2 3 4 5 | 3 5 5 7 7
 2 3       | 1 2 3 4 5 + 2 3 2 3 2 = 3 5 5 7 7
+
 **Input** | **Output**
+--------- | ----------  
 5 4 3     | 7 7 4 9
 2 3 1 4   | 5 4 3 5 + 2 3 1 4 = 7 7 4 9
 
@@ -196,9 +193,11 @@ Write a program to read **an array of integers** and **condense** them by **summ
 2 10 3    | 2 10 3 à 2+10 10+3 à 12 13 à 12 + 13 à 25
 25
 **Input** | **Output**
+--------- | ----------  
 5 0 4 1 2 | 5 0 4 1 2 à 5+0 0+4 4+1 1+2 à 5 4 5 3 à 5+4 4+5 5+3 à 9 9 8 à 9+9 9+8 à 18 17 à 18+17 à 35
 35
 **Input** | **Output**
+--------- | ----------  
 1         | 1 is already condensed to number
 1
 
@@ -232,12 +231,10 @@ Create a program that reads an **array of integers** (space separated values) an
 
 **Input** | **Output**
 --------- | ----------
-**5**     | { 5 }
-**Input** | **Output**
-2 3 **8 1** 7 4 | { 8, 1 }
-**Input** | **Output**
-1 2 **3 4 5** 6 7 | { 3, 4, 5 }
-10 20 30 **40 50** 60 70 80 | { 40, 50 }
+5     | { 5 }
+2 3 8 1 7 4 | { 8, 1 }
+1 2 3 4 5 6 7 | { 3, 4, 5 }
+10 20 30 40 50 60 70 80 | { 40, 50 }
 
 #### Hints
 
