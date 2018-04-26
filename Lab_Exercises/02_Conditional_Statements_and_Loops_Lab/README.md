@@ -81,6 +81,7 @@ Print on the console the time after **30** minutes. The result should be in form
 --------- | ----------
 11        | 11:38
 08        |
+
 **Input** | **Output**
 --------- | ----------
 11        | 12:02
@@ -250,15 +251,15 @@ Print every row of the table in the following format: {theInteger} X {times} = {
 **Input** | **Output**
 --------- | ----------
 5         | 5 X 1 = 5
-            5 X 2 = 10
-            5 X 3 = 15
-            5 X 4 = 20
-            5 X 5 = 25
-            5 X 6 = 30
-            5 X 7 = 35
-            5 X 8 = 40
-            5 X 9 = 45
-            5 X 10 = 50
+          | 5 X 2 = 10
+          | 5 X 3 = 15
+          | 5 X 4 = 20
+          | 5 X 5 = 25
+          | 5 X 6 = 30
+          | 5 X 7 = 35
+          | 5 X 8 = 40
+          | 5 X 9 = 45
+          | 5 X 10 = 50
             
 **Input** | **Output**
 --------- | ----------
