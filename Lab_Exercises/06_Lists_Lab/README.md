@@ -6,17 +6,14 @@ You can check your solutions here: [https://judge.softuni.bg/Contests/397/Lists-
 
 ### 1. Remove Negatives and Reverse
 
-Read a **list of integers**, **remove all negative numbers** from it and print the remaining elements in **reversed order**. In case
-of no elements left in the list, print “empty”.
+Read a **list of integers**, **remove all negative numbers** from it and print the remaining elements in **reversed order**. In case of no elements left in the list, print “empty”.
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
 10 -5 7 9 -33 50 | 50 9 7 10
-**Input** | **Output**
 7 -2 -10 1 | 1 7
-**Input** | **Output**
 -1 -2 -3 | empty
 
 #### Hints
@@ -44,9 +41,7 @@ Write a program to **append several lists** of numbers.
 **Input** | **Output**
 --------- | ----------
 1 2 3 |4 5 6 |  7  8  | 7 8 4 5 6 1 2 3
-**Input** | **Output**
 7 | 4  5|1 0| 2 5 |3 | 3 2 5 1 0 4 5 7
-**Input** | **Output**
 1| 4 5 6 7  |  8 9 |8 9 4 5 6 7 1
 
 #### Hints
@@ -75,10 +70,8 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 --------- | ----------
 3 3 6 1 | **3 3** 6 1 à**6 6** 1 à 12 1
 12 1
-**Input** | **Output**
 8 2 2 4 8 16 | 8 **2 2** 4 8 16 à 8 **4 4** 8 16 à**8 8** 8 16 à 16 8 16
 16 8 16
-**Input** | **Output**
 5 4 2 1 1 4 | 5 4 2 **1 1** 4à5 4 **2 ****2** 4à5 **4 ****4** 4à 5 8 4
 5 8 4
 
@@ -143,7 +136,6 @@ Read a **list of decimal numbers **and **sort** them in increasing order. Print 
 **Input** | **Output**
 --------- | ----------
 8 2 7 3   | 2 &lt;= 3 &lt;= 7 &lt;= 8
-**Input** | **Output**
 2 4 -9    | -9 &lt;= 2 &lt;= 4
 
 #### Hints
@@ -152,15 +144,13 @@ Read a **list of decimal numbers **and **sort** them in increasing order. Print 
 
 ### 6. Square Numbers
 
-Read a **list of integers** and **extract all square numbers** from it and print them in **descending order**. A **square number** is an integer which is
-the square of any integer. For example, 1, 4, 9, 16 are square numbers.
+Read a **list of integers** and **extract all square numbers** from it and print them in **descending order**. A **square number** is an integer which is the square of any integer. For example, 1, 4, 9, 16 are square numbers.
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
 3 **16 4** 5 6 8 **9** | 16 9 4
-**Input** | **Output** 
 12 **1 9 4 16** 8 **25 49 16** | 49 25 16 16 9 4 1
 
 #### Hints
@@ -243,7 +233,4 @@ indexes.
 
 ##### Counting Occurrences with Dictionary
 
-Dictionaries map some input **key** (e.g. string, integer or real number) to some **value**. Using a dictionary, we can map an input number x to a dictionary value dict[x] and apply the first occurrence counting algorithm. Learn more about
-dictionaries at [https://www.dotnetperls.com/dictionary](https://www.dotnetperls.com/dictionary). In the next lesson you will learn how to use dictionaries.
-
- 
+Dictionaries map some input **key** (e.g. string, integer or real number) to some **value**. Using a dictionary, we can map an input number x to a dictionary value dict[x] and apply the first occurrence counting algorithm. Learn more about dictionaries at [https://www.dotnetperls.com/dictionary](https://www.dotnetperls.com/dictionary). In the next lesson you will learn how to use dictionaries.
