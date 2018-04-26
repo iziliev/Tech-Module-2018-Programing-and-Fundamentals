@@ -15,7 +15,6 @@ You are given a **date** in format **day-month-year**. Calculate and print the *
 **Input** | **Output**
 --------- | ----------
 18-04-2016 | Monday
-**Input** | **Output**
 27-11-1996 | Wednesday
 
 #### Hints
@@ -47,9 +46,7 @@ The order of the words in the output will be different after each program execut
 
 · Create a random number generator – an object rnd of type **Random**.
 
-· In a** for-loop exchange each number** at positions 0, 1, … words.Length-1 by a number at **random position**. To generate a random
-number in rangeuse **rnd.**[**Next(minValue, maxValue)**](https://msdn.microsoft.com/en-us/library/2dx6wyd4(v=vs.110).aspx). Note that by
-definition minValue is **inclusive**, but maxValue is **exclusive**.
+· In a** for-loop exchange each number** at positions 0, 1, … words.Length-1 by a number at **random position**. To generate a random number in rangeuse **rnd.**[**Next(minValue, maxValue)**](https://msdn.microsoft.com/en-us/library/2dx6wyd4(v=vs.110).aspx). Note that by definition minValue is **inclusive**, but maxValue is **exclusive**.
 
 · Print each word in the array on new line.
 
@@ -62,7 +59,6 @@ Calculate and print n! (n factorial) for very big integer n (e.g. 1000).
 **Input** | **Output**
 --------- | ----------
 5         | 120
-**Input** | **Output**
 50        | 3041409320171337804361260816606476884437764156896051200000000000
 
 #### Hints
@@ -79,8 +75,7 @@ Use the class BigIntegerfrom the built-in .NET library System.Numerics.dll.
 
 ### 4. Distance Between Points
 
-Write a method to calculate the distance between two points **p 1** {**x 1**, **y 1**} and **p 2** {**x 2**, **y 2**}.
-Write a program to read **two points** (given as two integers) and print the **Euclidean distance** between them.
+Write a method to calculate the distance between two points **p 1** {**x 1**, **y 1**} and **p 2** {**x 2**, **y 2**}. Write a program to read **two points** (given as two integers) and print the **Euclidean distance** between them.
 
 #### Examples
 
@@ -88,10 +83,8 @@ Write a program to read **two points** (given as two integers) and print the **E
 --------- | ----------
 3 4       | 5.000
 6 8
-**Input** | **Output**
 3 4       | 2.000
 5 4
-**Input** | **Output**
 8 -2      | 11.402
 -1 5
 
@@ -142,12 +135,16 @@ The **input** holds the number of points n and n lines, each holding a point {X 
 6 8       | (2, 5)
 2 5
 -1 3      | The closest two points are **{3, 4}** and **{2, 5}** at distance 1.4142135623731 ≈ **1.414**.
+
 **Input** | **Output**
+--------- | ----------
 3         | 0.000
 12 -30    | (6, 18)
 6 18      | (6, 18)
 6 18      | Two of the points have the same coordinates **{6, 18}**, so the distance between them is **0**.
+
 **Input** | **Output**
+--------- | ----------
 3         | 1.414
 1 1       | (1, 1)
 2 2       | (2, 2)
@@ -206,12 +203,9 @@ o r1.Bottom ≤ r2.Bottom
 
 · Combine all methods into a single program.
 
- 
-
 ### 7. Sales Report
 
-Write a class Sale holding the following data: **town**, **product**, **price**, **quantity**. Read a **list of sales** and calculate and print the
-**total sales by town** as shown in the output. Order **alphabetically** the towns in the output.
+Write a class Sale holding the following data: **town**, **product**, **price**, **quantity**. Read a **list of sales** and calculate and print the **total sales by town** as shown in the output. Order **alphabetically** the towns in the output.
 
 #### Examples
 
@@ -247,8 +241,7 @@ o For **each town** in a loop use a LINQ query to calculate the **total sales** 
 
 o Define a dictionary SortedDictionary&lt;string,decimal&gt;salesByTown to hold the total sales for each town.
 
-o Pass through all the sales from the input in a loop and for each sale, add its **price** * **quantity** to the salesByTown for the current town. If the town is missing in the
-dictionary, first create it.
+o Pass through all the sales from the input in a loop and for each sale, add its **price** * **quantity** to the salesByTown for the current town. If the town is missing in the dictionary, first create it.
 
 o Finally print the dictionary.
 
