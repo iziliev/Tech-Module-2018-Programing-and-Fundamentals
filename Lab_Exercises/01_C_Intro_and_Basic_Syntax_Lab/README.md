@@ -21,10 +21,10 @@ Write a program, which **reads 2 whole numbers** and **adds** them together. The
 
 #### Examples
 
-**Input** | **Output**    **Input** | **Output**
---------- | ----------    --------- | ----------
-2         | 2 + 5 = 7     1         | 1 + 3 = 4
-5                         3
+**Input** | **Output** 
+--------- | ----------
+2         | 2 + 5 = 7
+5     
 
 **Input** | **Output**
 --------- | ----------
