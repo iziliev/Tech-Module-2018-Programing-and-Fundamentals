@@ -25,8 +25,14 @@ Write a program, which **reads 2 whole numbers** and **adds** them together. The
 --------- | ----------
 2         | 2 + 5 = 7
 5
+
+**Input** | **Output**
+--------- | ----------
 1         | 1 + 3 = 4
 3
+
+**Input** | **Output**
+--------- | ----------
 -3        | -3 + 5 = 2
 5
 
@@ -35,11 +41,8 @@ Write a program, which **reads 2 whole numbers** and **adds** them together. The
 Write a program to read **data** about an **employee** and print it on the console with the appropriate formatting. The order the input comes in is as such:
 
 · Name – **no** formatting
-
 · Age – **no** formatting
-
 · Employee ID – **8-digit padding** (employee id 356 is 00000356)
-
 · Monthly Salary – formatted to **2 decimal places** (2345.56789 becomes 2345.56)
 
 #### Examples
@@ -49,11 +52,17 @@ Write a program to read **data** about an **employee** and print it on the conso
 Ivan      | Name: Ivan
 24        | Age: 24
 1192      | Employee ID: 00001192
-1500.353  | Salary: 1500.35  
+1500.353  | Salary: 1500.35
+
+**Input** | **Output**
+--------- | ----------
 Peter     | Name: Peter
 30        | Age: 30    
 113236    | Employee ID: 00113236
 1738.1112 | Salary: 1738.11
+
+**Input** | **Output**
+--------- | ----------
 Naiden    | Name: Naiden
 27        | Age: 27
 1111222   | Employee ID: 01111222
