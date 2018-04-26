@@ -294,7 +294,7 @@ Write a programthat replaces in a HTML document given as string **all the tags *
 
   &lt;li&gt;        | &lt;li&gt;
 
-    &lt;a href=**"http://softuni.bg"**&gt;SoftUni&lt;/a&gt; | [URL href=**"http://softuni.bg"**]SoftUni[/URL]
+    &lt;a href="http://softuni.bg"**&gt;SoftUni&lt;/a&gt; | [URL href=**"http://softuni.bg"**]SoftUni[/URL]
 
  &lt;/li&gt; | &lt;/li&gt;
 
