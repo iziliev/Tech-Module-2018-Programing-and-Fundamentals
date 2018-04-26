@@ -67,22 +67,16 @@ games** are the following games in this table:
 
 **Name** | **Price**
 -------- | ---------
-[]()[OutFall 4]() | $39.99
-**Name** | **Price**
-[CS: OG]() | $15.99
-**Name** | **Price**
-[Zplinter Zell]() | $19.99
-**Name** | **Price**
-[Honored 2]() | $59.99
-**Name** | **Price**
-[RoverWatch]() | $29.99
-**Name** | **Price**
-[RoverWatch Origins Edition]() | $39.99
+OutFall 4 | $39.99
+CS: OG | $15.99
+Zplinter Zell | $19.99
+Honored 2 | $59.99
+RoverWatch | $29.99
+RoverWatch Origins Edition | $39.99
 
 On the first line, you will receive your **current balance** – a **floating-point** number in the range **[0.00…5000.00]**.
 
-Until you receive the command “Game Time”, you have to keep **buying games**. When a **game** is **bought**, the user’s **balance **decreases
-by the **price **of the game.
+Until you receive the command “Game Time”, you have to keep **buying games**. When a **game** is **bought**, the user’s **balance **decreases by the **price **of the game.
 
 Additionally, the program should obey the following conditions:
 
@@ -102,13 +96,17 @@ When you receive “Game Time”,** print** the user’s **remaining money **and
 RoverWatch | Bought RoverWatch
 Honored 2  | Bought Honored 2
 Game Time   | Total spent: $89.98. Remaining: $30.02
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 19.99     | Too Expensive
 Reimen origin | Bought Zplinter Zell
 RoverWatch | Out of money!
 Zplinter Zell
 Game Time
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 79.99 | Bought OutFall 4
 OutFall 4 | Bought RoverWatch Origins Edition
 RoverWatch Origins Edition | Total spent: $79.98. Remaining: $0.01
@@ -132,10 +130,14 @@ The megapixels must **always** be rounded to the** first digit** after the **dec
 --------- | ----------
 1024      | 1024x768 =&gt; 0.8MP
 768
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 1920      | 1920x1080 =&gt; 2.1MP
 1080
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 5344      | 5344x3006 =&gt; 16.1MP
 3006
 
@@ -185,7 +187,9 @@ Write a program, which receives **image metadata** as input and prints informati
 1500000
 5334
 3006
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 533 | Name: DSC_0533.jpg
 20  | Date Taken: 20/03/1993 11:33
 3 | Size: 350KB
@@ -195,7 +199,9 @@ Write a program, which receives **image metadata** as input and prints informati
 350000
 768
 1024
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 6552  | Name: DSC_6552.jpg
 12  | Date Taken: 12/11/2012 15:33
 11 | Size: 850B
@@ -208,8 +214,7 @@ Write a program, which receives **image metadata** as input and prints informati
 
 ### Problem 5. BPM Counter
 
-Write a program, which receives **BPM **(beats per minute) and **number of beats** from the console and calculates how many **bars **(1 bar == 4
-beats) the beats equal to, then calculates the **length** of the sequence in **minutes** and **seconds**.
+Write a program, which receives **BPM **(beats per minute) and **number of beats** from the console and calculates how many **bars **(1 bar == 4 beats) the beats equal to, then calculates the **length** of the sequence in **minutes** and **seconds**.
 
 The bars must **always** be rounded to the** first digit** after the **decimal point **(i.e. 1.75 bars è 1.8 bars).
 
@@ -219,10 +224,14 @@ The bars must **always** be rounded to the** first digit** after the **decimal p
 --------- | ----------
 60        | 15 bars - 1m 0s
 60
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 128       | 21.2 bars - 0m 39s
 85
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 522       | 20 bars - 0m 9s
 80
 
@@ -235,8 +244,7 @@ Write a program, which prints all the possible **nucleic acid sequences** (A, C,
 
 Each nucleotide has a corresponding numeric value – A è 1, C è 2, G è 3, T è 4.
 
-For every sequence, take the **sum **of its elements (e.g. **ACAC**è 1 + 2 + 1 + 2 = 6) and if it’s **equal to or larger than** the **match sum**, print
-the sequence with an “O” before and after it, otherwise print “X” before and after it.
+For every sequence, take the **sum **of its elements (e.g. **ACAC**è 1 + 2 + 1 + 2 = 6) and if it’s **equal to or larger than** the **match sum**, print the sequence with an “O” before and after it, otherwise print “X” before and after it.
 
 #### Examples
 
@@ -382,9 +390,7 @@ TTT è 4+4+4 è 12
 
 ### Problem 7. Training Hall Equipment
 
-As the new intern in SoftUni, you’re tasked with **equipping** the **new training halls** with all the **necessary items** to lead quality
-technical trainings. You’ll be given a **budget** and a **list of items** to buy. The other intern will be tasked with plugging in everything and hopefully not
-getting anyone electrocuted in the process…
+As the new intern in SoftUni, you’re tasked with **equipping** the **new training halls** with all the **necessary items** to lead quality technical trainings. You’ll be given a **budget** and a **list of items** to buy. The other intern will be tasked with plugging in everything and hopefully not getting anyone electrocuted in the process…
 
 #### Input
 
@@ -402,9 +408,7 @@ getting anyone electrocuted in the process…
 
 #### Output
 
-Every time an item is **added** to the cart, print “Adding {count} {item} to cart.” on the console. Make sure to **pluralize** item names (if the
-**item****count****isn’t 1**, add an **S** at the end of the item name). After all of the items have been added to the **cart**,
-you need to calculate the **subtotal** of the items and check if the **budget** will be **enough**. 
+Every time an item is **added** to the cart, print “Adding {count} {item} to cart.” on the console. Make sure to **pluralize** item names (if the **item****count****isn’t 1**, add an **S** at the end of the item name). After all of the items have been added to the **cart**, you need to calculate the **subtotal** of the items and check if the **budget** will be **enough**. 
 
 · If it’s enough, print “Money left: ${moneyLeft}”, **formatted** to the **2 nd decimal point**.
 
@@ -430,7 +434,9 @@ desk
 60        | Adding 60 desks to cart.
           | Subtotal: $16202.57
           | Money left: $3797.43
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 700
 3
 projector
@@ -445,7 +451,9 @@ chair
 desk
 99.99     | Subtotal: $660.16
 25        | Money left: $39.84
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 2000
 4
 whiteboard | Adding 1 whiteboard to cart.
@@ -492,7 +500,9 @@ Print all the characters together, forming a **text message string**.
 555
 555
 666
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 9         | hey there
 44
 33
@@ -503,7 +513,9 @@ Print all the characters together, forming a **text message string**.
 33
 777
 33
-**Input** | **Output**
+
+**Input**           | **Output**
+------------------- | -----------
 7         | meet me
 6
 33
