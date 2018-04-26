@@ -6,26 +6,24 @@ Problems for exercises and homework for the [“Programming Fundamentals” cour
 
 Write a program, which receives a **profession** (as a **string**) and chooses the perfect **drink** for the person. The possible combinations are: 
 
-· “Water” – for “**Athlete**”
+· “Water” – for “Athlete”
 
-· “Coffee” – for “**Businessman**” or “**Businesswoman**”
+· “Coffee” – for “Businessman” or “Businesswoman”
 
-· “**Beer**” – for “**SoftUni Student**”
+· “*Beer” – for “SoftUni Student”
 
-· “[]()[**Tea**]()”– for all **other professions**.
+· “Tea”– for all other professions.
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
 Athlete | Water
-**Input** | **Output**
 Doctor | Tea
 
 ### Problem 2. Choose a Drink 2.0
 
-Your program needs to get smarter. Now you will receive on the second line the []()[quantities ]()of the drink and you have to print the calculated the price. You can see the
-prices of the drinks in the table below:
+Your program needs to get smarter. Now you will receive on the second line the []()[quantities ]()of the drink and you have to print the calculated the price. You can see the prices of the drinks in the table below:
 
 **Water** | **Coffee** | **Beer** | **Tea**
 0.70 | 1.00 | 1.70 | 1.20
@@ -34,15 +32,14 @@ prices of the drinks in the table below:
 
 The **input** will be on two lines:
 
-· On the **first****line**, you will receive the **profession**
-
-· On the **second** line, you will receive the **quantity** as an **integer**. 
+· On the first line, you will receive the profession
+· On the second line, you will receive the quantity as an integer. 
 
 #### Output
 
 Print the output in the following format:
 
-[]()[The {profession} has to pay {totalPrice}]().
+The {profession} has to pay {totalPrice}].
 
 **Format** the **price** to the **2nd decimal place**.
 
@@ -52,10 +49,8 @@ Print the output in the following format:
 --------- | ----------
 Athlete   | The Athlete has to pay 0.70.
 1
-**Input** | **Output**
 SoftUni Student | The SoftUni Student has to pay 13.60.
 8
-**Input** | **Output**
 Chef | The Chef has to pay 3.60.
 3
 
@@ -66,7 +61,7 @@ from the console and calculates **how much** the customer should **pay** to book
 
 Different halls have different prices:
 
-/|[]()[**Small Hall**]() | []()[**Terrace**]() | []()[**Great Hall**]()
+/|Small Hall| Terrace | Great Hall
 **Price** | 2500$ | 5000$ | 7500$
 **Capacity** | 50 | 100 | 120
 
@@ -93,7 +88,7 @@ Example: The group has **10 people** and wants the **gold package ****è $292.50
 · Price per person: $2925 / **10 people** = **$292.50 per person**
 
 You should print **which hall** is the **most suitable** for the group and the **price per person**. If the group is **bigger
-than 120** people – print “[]()[**We do not have an appropriate hall.**]()”.
+than 120** people – print “**We do not have an appropriate hall.**”.
 
 #### Input
 
@@ -115,12 +110,16 @@ The price per person is {price}$
 
 **Input** | **Output**
 --------- | ----------
-20  | []()[We can offer you the **SmallHall**]()
+20  | We can offer you the **SmallHall**
 Gold | The price per person is **146.25$**
+
 **Input** | **Output**
+--------- | ----------
 90  | We can offer you the **Terrace**
 Platinum | The price per person is **56.67$**
+
 **Input** | **Output**
+--------- | ----------
 150       | We do not have an appropriate hall.
 Normal
 
@@ -128,11 +127,11 @@ Normal
 
 A hotel has three types of rooms: **studio**, **double** and **master suite**. The prices are different for the different months: 
 
-[]()[**May and October**]() | **June and []()[September]()** | **July, August and December**
+**May and October** | **June and September** | **July, August and December**
 Studio - **50** leva per night | Studio - **60** leva per night | Studio - **68** leva per night
-[]()[**May and October**]() | **June and []()[September]()** | **July, August and December**
+**May and October** | **June and September** | **July, August and December**
 Double - **65** leva per night | Double - **72** leva per night | Double - **77** leva per night
-[]()[**May and October**]() | **June and []()[September]()** | **July, August and December**
+**May and October** | **June and September** | **July, August and December**
 Suite - **75** leva per night | Suite - **82** leva per night | Suite - **89** leva per night
 
 They have also the following discounts: 
@@ -149,7 +148,7 @@ They have also the following discounts:
 
 The input consists of exactly **2 lines**:
 
-· First line: **Month** – []()[**May**]()**, []()[June](), []()[July](), []()[August](), []()[September]()[]()[October]()**or** December**
+· First line: **Month** – May, June, July, August,September, October **or** December
 
 · Second line: **Nights Count** – **an integer between****[0**** ... 200]**
 
@@ -157,11 +156,11 @@ The input consists of exactly **2 lines**:
 
 Print **3 lines** on the console:
 
-· On **the first**: “[]()[]()[**Studio: {price for the stay} lv**]()**.**”
+· On **the first**: “**Studio: {price for the stay} lv**.”
 
-· On **the second**: “[]()[**Double**]()**: {****price for the stay****} ****lv****.**”
+· On **the second**: “**Double**: {****price for the stay****} ****lv****.**”
 
-· On **the third: “****Suite: {****price for the stay****} lv.”**
+· On **the third: “**Suite: {****price for the stay****} lv.”**
 
 **Format** the **prices** to the **2nd decimal place**.
 
@@ -171,7 +170,7 @@ Print **3 lines** on the console:
 --------- | ----------
 June      | Studio: 300.00 lv.
 5         | Double: 360.00 lv.
-          | []()[Suite](): 410.00 lv.
+          | Suite: 410.00 lv.
 
 The **nights are not enough** for getting a discount, so the studio is 60 lv, **double room = 72** and apartment = 82. We **multiply the prices by the nights** and get the total prices.
 
@@ -201,7 +200,7 @@ Write a program, which receives a **noun** and prints the **noun** in **plural**
 
 · A noun that ends in **y **– remove the **y** and add **ies**
 
-· A noun that ends in []()[**o**, **ch**,** s**,** sh**,** x **or** z **]()– add **es **at the end of the word
+· A noun that ends in **o**, **ch**,** s**,** sh**,** x **or** z **– add **es **at the end of the word
 
 · In all other cases – just add **s **at the end
 
@@ -218,9 +217,7 @@ Print only the **word in plural.**
 **Input** | **Output**
 --------- | ----------
 couch     | couches
-**Input** | **Output**
 butterfly | butterflies
-**Input** | **Output**
 door      | doors
 
 #### Hints
@@ -230,8 +227,7 @@ internet. Do not forget that **strings are****immutable**.
 
 ### Problem 6. Interval of Numbers
 
-Write a program, which takes **two numbers** as input and prints the **interval of numbers between them**, **starting** from the **smaller one** and **ending**
-with the **larger **one.
+Write a program, which takes **two numbers** as input and prints the **interval of numbers between them**, **starting** from the **smaller one** and **ending** with the **larger **one.
 
 #### Input
 
@@ -253,15 +249,16 @@ Print all the numbers separated on **new lines**.
 --------- | ----------
 42        |
 48        | 42 43 44 45 46 47 48
+
 **Input** | **Output**
+--------- | ----------
 100       | 14 15 16 _continues..._ 98 99 100
 14
 
 ### Problem 7. Cake Ingredients
 
 Write a baking program, which takes as an input ingredients and writes a message when the ingredient is in the system. For every
-given ingredient, you should write: [“Adding ingredient {name of the ingredient}]().”. When you receive the command “Bake!” from the console you should
-stop the program and write “Preparing cake with {number of given ingredients} ingredients.”.
+given ingredient, you should write: “Adding ingredient {name of the ingredient}.”. When you receive the command “Bake!” from the console you should stop the program and write “Preparing cake with {number of given ingredients} ingredients.”.
 
 #### Input
 
@@ -269,8 +266,8 @@ You will receive **ingredients until the command **“**Bake!**”is given.
 
 #### Output
 
-For every given ingredient write on a **new line** the message: “[]()[**Adding ingredient {name of the ingredient}.**]()”.
-At the end print the message: “[]()[**Preparing cake with {number of given ingredients} ingredients**]()**.**”.
+For every given ingredient write on a **new line** the message: “**Adding ingredient {name of the ingredient}.**”.
+At the end print the message: “**Preparing cake with {number of given ingredients} ingredients**.**”.
 
 #### Constraints
 
@@ -290,8 +287,7 @@ Bake!     | Adding ingredient Butter.Preparing cake with 4 ingredients.
 
 ### Problem 8. Calories Counter
 
-You have to write a program, which **counts the calories**, which can be found in your **pizza recipe**. In your recipe, there are only **four**
-ingredients – **cheese**, **tomato sauce**, **salami** and **pepper**. Each ingredient contains a **fixed amount** of calories: 
+You have to write a program, which **counts the calories**, which can be found in your **pizza recipe**. In your recipe, there are only **four** ingredients – **cheese**, **tomato sauce**, **salami** and **pepper**. Each ingredient contains a **fixed amount** of calories: 
 
 · **Cheese** – **500** calories
 
@@ -299,20 +295,19 @@ ingredients – **cheese**, **tomato sauce**, **salami** and **pepper**. Each in
 
 · **Salami** – **600** calories
 
-[]()[]()[**Pepper**]()– **50** calories 
+**Pepper** – **50** calories 
 
-If you** receive **one of these ingredients **more than once**, you should **add **the caloriesto the** total amount****again**. You
-should **not process any other ingredients**. Ingredients are **case-insensitive**.
+If you** receive **one of these ingredients **more than once**, you should **add **the caloriesto the** total amount****again**. You should **not process any other ingredients**. Ingredients are **case-insensitive**.
 
 #### Input
 
-#### On the next n lines, you will receive different []()[ingredients](). Add the calories only from the ones, which are in your recipe. 
+#### On the next n lines, you will receive different ingredients. Add the calories only from the ones, which are in your recipe. 
 
 #### Output
 
 Print the answer in the following format:
 
-[]()[Total calories: {totalCaloriesAmount}]()
+Total calories: {totalCaloriesAmount}
 
 #### Constraints
 
@@ -324,14 +319,16 @@ Print the answer in the following format:
 
 **Input** | **Output**
 --------- | ----------
-**5**     | Total calories: 1300
+5     | Total calories: 1300
 cheese
 toMatO sauce
 flour
 salami
 pepper
+
 **Input** | **Output**
-**3**     | Total calories: 1000
+--------- | ----------
+3    | Total calories: 1000
 Cheese
 Cucumber
 cheese
@@ -365,7 +362,9 @@ Print only the **total count** of the numbers.
 5
 6
 PF is the best!
+
 **Input** | **Output**
+--------- | ----------
 12312     | 1
 End the input
 
@@ -421,9 +420,7 @@ Write a program, which receives a number – **n**, and prints a triangle from *
 
 ### Problem 11. 5 Different Numbers
 
-You will be given two numbers – **a **and **b**. Generate **five** numbers - **n**** 1**, **n**** 2**, **n**** 3**, **n**** 4** , **n**** 5**, for which the following **conditions** are true: **a** ≤ **n**** 1** &lt; **n**** 
-2** &lt; **n**** 3** &lt; **n**** 4** &lt; **n**** 5** ≤ **b**. If there is **no number** in the given interval, which **satisfies
-the conditions** – print “**No**”.
+You will be given two numbers – **a **and **b**. Generate **five** numbers - **n**** 1**, **n**** 2**, **n**** 3**, **n**** 4** , **n**** 5**, for which the following **conditions** are true: **a** ≤ **n**** 1** &lt; **n**** 2** &lt; **n**** 3** &lt; **n**** 4** &lt; **n**** 5** ≤ **b**. If there is **no number** in the given interval, which **satisfies the conditions** – print “**No**”.
 
 #### Input
 
@@ -487,11 +484,9 @@ Print all numbers in **increasing order** and on a **new line**.
 
 Write a program, which finds all the possible combinations between two numbers – **N **and **M**.
 
-The first digit **decreases** from **N to 1**,and the second digit **increases** from **1 to M**. The two digits form a **number**.
-**Multiply the two digits**,then** multiply **their** product **by** 3**.** Add **the** result **to the** total sum**. 
+The first digit **decreases** from **N to 1**,and the second digit **increases** from **1 to M**. The two digits form a **number**. **Multiply the two digits**,then** multiply **their** product **by** 3**.** Add **the** result **to the** total sum**. 
 
-You will also be given a **third number**, which will be the **maximum boundary of the sum**. If the **sum is equal or greater than this number**
-you should **stop the program**. See the examples for further information. 
+You will also be given a **third number**, which will be the **maximum boundary of the sum**. If the **sum is equal or greater than this number** you should **stop the program**. See the examples for further information. 
 
 #### Input
 
@@ -523,14 +518,13 @@ o "Sum: {sum from the combinations}"
 
 **Input** | **Output**
 --------- | ----------
-[]()[3]() | 7 combinations
-4         | []()[Sum: 126 &gt;= 123]()
+3 | 7 combinations
+4         | Sum: 126 &gt;= 123
 123
 
 ### Problem 13. Game of Numbers
 
-Write a program, which finds all possible combinations in the interval **between two numbers**. The program should also find the **last combination**, in which a**
-number’s digits are equal to a given magical number**.
+Write a program, which finds all possible combinations in the interval **between two numbers**. The program should also find the **last combination**, in which a** number’s digits are equal to a given magical number**.
 
 #### Input
 
@@ -552,13 +546,13 @@ o "Number found! {first number} + {second number} = {magical number}"
 
 · If such **combination does not exist**:
 
-o "[]()[{total number of combinations} combinations - neither equals {magical number}]()"
+o "{total number of combinations} combinations - neither equals {magical number}"
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
-1         | []()[Number found! 4 + 1 = 5]()
+1         | Number found! 4 + 1 = 5
 10
 **5**
 
@@ -574,8 +568,7 @@ Neither of them has a sum of 100.
 
 ### Problem 14. * Magic Letter
 
-Write a program, which prints all **3-letter combinations**, **using only the letters from a given interval**. You will also receive a **third
-letter**. Every **combination**, which **contains** this letter **should not** be printed.
+Write a program, which prints all **3-letter combinations**, **using only the letters from a given interval**. You will also receive a **third letter**. Every **combination**, which **contains** this letter **should not** be printed.
 
 #### Input
 
@@ -595,7 +588,7 @@ Print **all combinations on a single line**.
 
 **Input** | **Output**
 --------- | ----------
-[a]()     | aaa aac aca acc caa cac cca ccc
+a     | aaa aac aca acc caa cac cca ccc
 c
 b
 
@@ -607,41 +600,27 @@ Combinations containing **b are invalid**.
 
 **Input** | **Output**
 --------- | ---------- 
-[f]()
+f         | fff ffg ffi ffj ffk fgf fgg fgi fgj fgk fif fig fii fij fik fjf fjg fji fjj fjk fkf fkg fki fkj fkk gff gfg gfi gfj gfk ggf ggg ggi ggj ggk gif gig gii gij gik gjf gjg gji gjj gjk gkf gkg gki gkj gkk iff ifg ifi ifj ifk igf igg igi igj igk iif iig iii iij iik ijf ijg iji ijj ijk ikf ikg iki ikj ikk jff jfg jfi jfj jfk jgf jgg jgi jgj jgk jif jig jii jij jik jjf jjg jji jjj jjk jkf jkg jki jkj jkk kff kfg kfi kfj kfk kgf kgg kgi kgj kgk kif kig kii kij kik kjf kjg kji kjj kjk kkf kkg kki kkj kkk
 k
 h
 
-fff ffg ffi ffj ffk fgf fgg fgi fgj fgk fif fig fii fij fik fjf fjg fji fjj fjk
-  fkf fkg fki fkj fkk gff gfg gfi gfj gfk ggf ggg ggi ggj ggk gif gig gii gij
-  gik gjf gjg gji gjj gjk gkf gkg gki gkj gkk iff ifg ifi ifj ifk igf igg igi
-  igj igk iif iig iii iij iik ijf ijg iji ijj ijk ikf ikg iki ikj ikk jff jfg
-  jfi jfj jfk jgf jgg jgi jgj jgk jif jig jii jij jik jjf jjg jji jjj jjk jkf
-  jkg jki jkj jkk kff kfg kfi kfj kfk kgf kgg kgi kgj kgk kif kig kii kij kik
-  kjf kjg kji kjj kjk kkf kkg kki kkj kkk
+
 
 **Input** | **Output**
 --------- | ----------
-[a]()
+a         | aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc          
 c
 z
 
-aaa
-  aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab
-  cac cba cbb cbc cca ccb ccc
-
 ### Problem 15. * Neighbour Wars
 
-Gosho and Pesho are neighbours, but they don’t like each other very much. They don’t like violence as well, so they
-decided they need a save environment where they can fight each other. They hired you to write a program, which calculates who would win the fight. 
+Gosho and Pesho are neighbours, but they don’t like each other very much. They don’t like violence as well, so they decided they need a save environment where they can fight each other. They hired you to write a program, which calculates who would win the fight. 
 
-Gosho and Pesho have their own signature attacks – **Gosho** attacks with “**Thunderous fist**” **on every even turn** of the game and **Pesho** attacks with “**Roundhouse
-kick**” **on every odd turn**. You will receive **how much damage these attacks do from the console**.
+Gosho and Pesho have their own signature attacks – **Gosho** attacks with “**Thunderous fist**” **on every even turn** of the game and **Pesho** attacks with “**Roundhouse kick**” **on every odd turn**. You will receive **how much damage these attacks do from the console**.
 
-**Both players start with 100 Health points**. On **every third turn** Pesho and Gosho **restore 10 Health Points**. Health points
-are restored **after the attack is made**.
+**Both players start with 100 Health points**. On **every third turn** Pesho and Gosho **restore 10 Health Points**. Health points are restored **after the attack is made**.
 
-When one of the **player’s health is below or equal to zero** you should **stop any other further operations** and **print who the winner is**,** how much health points **he hasandin** which turn **he won.
-Since Mike Tyson is the judge of the match, the winning round is always printed with “**th**” in the end.
+When one of the **player’s health is below or equal to zero** you should **stop any other further operations** and **print who the winner is**,** how much health points **he hasandin** which turn **he won. Since Mike Tyson is the judge of the match, the winning round is always printed with “**th**” in the end.
 
 #### Input
 
@@ -653,8 +632,7 @@ The input is read from the console and consists of two lines:
 
 #### Output
 
-Print on every turn who is attacking and how much health the opponent is after the attack: "{name of the attacker} used {name of the attack} and reduced {name
-of the defending player} to {health of the defending player} health."
+Print on every turn who is attacking and how much health the opponent is after the attack: "{name of the attacker} used {name of the attack} and reduced {name of the defending player} to {health of the defending player} health."
 
 When one of the players is **dead** print: "{name of the winner} won in {number of the round}th round."
 
@@ -671,22 +649,19 @@ When one of the players is **dead** print: "{name of the winner} won in {number 
 30
 40
 
-[]()[]()[Pesho used Roundhouse kick and reduced Gosho to 70 health.]()
-[]()[]()[Gosho used Thunderous fist and reduced Pesho to 60 health.]()
+Pesho used Roundhouse kick and reduced Gosho to 70 health.
+Gosho used Thunderous fist and reduced Pesho to 60 health.
 Pesho used Roundhouse kick and reduced Gosho to 40 health.
 Gosho used Thunderous fist and reduced Pesho to 30 health.
 Pesho used Roundhouse kick and reduced Gosho to 20 health.
-[]()[]()[Gosho won in 6th round.]()
-
- 
+Gosho won in 6th round.
 
 1 st round -&gt; **Pesho** attacks in **odd rounds** -&gt; so he does **30 damge to Gosho**.
 2 nd round -&gt; it is **Gosho’s** turn and he **does 40 damage to Pesho**.
 3 rd round -&gt; **first Pesho attacks with 30 damage and Gosho is now 40 health**. After that **both players receive 10 health**.
 4 th round **-&gt; After healing Gosho is 50 health and Pesho is 70**. It is **Gosho’s turn****and he does 40 damage to Pesho** -&gt; Pesho is now 30 health.
 5 th round -&gt; **Pesho attacks and reduces Gosho from 50 to 20 health**.
-6 th round -&gt; **Gosho attacks with 40 damage** and **kills Pesho**. They will **not receive healing**, because **one of the player is dead** and we should
-**print the final result**.
+6 th round -&gt; **Gosho attacks with 40 damage** and **kills Pesho**. They will **not receive healing**, because **one of the player is dead** and we should **print the final result**.
 
 **Input** | **Output**
 --------- | ----------
@@ -705,7 +680,7 @@ Pesho used Roundhouse kick and reduced Gosho to 20 health.
 Gosho used Thunderous fist and reduced Pesho to 80 health.
 Pesho used Roundhouse kick and reduced Gosho to 10 health.
 Gosho used Thunderous fist and reduced Pesho to 70 health.
-[]()[Pesho won in 13th round.]()
+Pesho won in 13th round.
 
 **Input** | **Output**
 --------- | ----------
