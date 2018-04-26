@@ -61,13 +61,16 @@ Write a program to read **n **integers and print their **sum**, **min**, **max**
 
 **Input** | **Output**
 --------- | ----------
-5    | Sum = 72
+5         | Sum = 72
 12        | Min = -5
 20        | Max = 37
 -5        | Average = 14.4
 37
 8
-4     | Sum = 135
+
+**Input** | **Output**
+--------- | ----------
+4         | Sum = 135
 50        | Min = 20
 20        | Max = 50
 25        | Average = 33.75
