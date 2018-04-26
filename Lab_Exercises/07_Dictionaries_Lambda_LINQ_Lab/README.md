@@ -15,9 +15,7 @@ Read a **list of real numbers** and **print them in ascending order** along with
 **Input** | **Output**
 --------- | ----------
 8 2.5 2.5 8 2.5 | 2.5 -&gt; 3 8 -&gt; 2
-**Input** | **Output**
 1.5 5 1.5 3 | 1.5 -&gt; 2 3 -&gt; 1 5 -&gt; 1
-**Input** | **Output**
 -2 0.33 0.33 2 | -2 -&gt; 1 0.33 -&gt; 2 2 -&gt; 1
 
 #### Hints
@@ -42,9 +40,7 @@ Write a program that extracts from a given sequence of words all elements that p
 **Input** | **Output**
 --------- | ----------
 Java C# PHP PHP JAVA C java | java, c#, c
-**Input** | **Output**
 3 5 5 hi pi HO Hi 5 ho 3 hi pi | 5, hi
-**Input** | **Output**
 a a A SQL xx a xx a A a XX c | a, sql, xx, c
 
 #### Hints
@@ -65,14 +61,13 @@ Write a program to read **n **integers and print their **sum**, **min**, **max**
 
 **Input** | **Output**
 --------- | ----------
-**5**     | Sum = 72
+5    | Sum = 72
 12        | Min = -5
 20        | Max = 37
 -5        | Average = 14.4
 37
 8
-**Input** | **Output**
-**4**     | Sum = 135
+4     | Sum = 135
 50        | Min = 20
 20        | Max = 50
 25        | Average = 33.75
@@ -95,7 +90,6 @@ Read a **list of real numbers** and **print largest 3 of them**. If less than 3 
 **Input** | **Output**
 --------- | ----------
 10 30 15 20 50 5 | 50 30 20
-**Input** | **Output**
 20 30     | 30 20
 
 #### Hints
@@ -139,9 +133,7 @@ Read an array of **4*k integers**, **fold** it like shown below, and **print the
 **Input** | **Output**
 --------- | ----------
 5 **2 3** 6 | 7 9 / 5  6  + 2  3  = 7  9 /
-**Input** | **Output**
 1 2 **3 4 5 6** 7 8 | 5 5 13 13 / 2  1  8  7  + 3  4  5  6  = 5  5 13 13 /
-**Input** | **Output**
 4 3 -1 **2 5 0 1 9 8** 6 7 -2 | 1 8 4 -1 16 14 / -1  3  4 -2  7  6  +  2  5  0  1  9  8  =  1  8  4 -1 16 14 /
 
 Hints
