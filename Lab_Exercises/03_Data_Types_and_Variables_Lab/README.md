@@ -25,8 +25,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 ### 2. Circle Area (12 Digits Precision)
 
-Write program to enter a radius r (real number) and **print the area** of the circle with exactly **12 digits** after the decimal
-point. Use data type of **enough precision** to hold the results.
+Write program to enter a radius r (real number) and **print the area** of the circle with exactly **12 digits** after the decimal point. Use data type of **enough precision** to hold the results.
 
 #### Examples
 
@@ -54,6 +53,7 @@ Write program to enter n numbers and calculate and print their **exact sum** (wi
 5         |
 10        |
 **Input** | **Output**
+--------- | ----------
 2         | 333333333333.30000000003
 0.00000000003 |
 333333333333.3 |
@@ -70,8 +70,7 @@ Write program to enter n numbers and calculate and print their **exact sum** (wi
 
 ### 4. Elevator
 
-Calculate how many courses will be needed to **elevate n persons** by using an elevator of **capacity of p persons**. The input holds two lines:the
-**number of people n** and the **capacity p** of the elevator.
+Calculate how many courses will be needed to **elevate n persons** by using an elevator of **capacity of p persons**. The input holds two lines:the **number of people n** and the **capacity p** of the elevator.
 
 #### Examples
 
@@ -79,10 +78,14 @@ Calculate how many courses will be needed to **elevate n persons** by using an e
 --------- | ----------
 17        | 6
 3
+
 **Input** | **Output**
+--------- | ----------
 4         | 1
 5
+
 **Input** | **Output**
+--------- | ----------
 10        | 2
 5
 
@@ -143,8 +146,7 @@ Perform 3 nested loops from 0 to n-1. For each number num print its correspondin
 
 ### 7. Greeting
 
-Write a program that enters **first name**, **last name** and **age** and prints "**_Hello, &lt;first name&gt; &lt;last name&gt;.
-You are &lt;age&gt; years old._**". Use interpolated strings.
+Write a program that enters **first name**, **last name** and **age** and prints "**_Hello, &lt;first name&gt; &lt;last name&gt;. You are &lt;age&gt; years old._**". Use interpolated strings.
 
 #### Examples
 
@@ -162,30 +164,29 @@ You might use the following code:
 
 ### 8. Refactor Volume of Pyramid 
 
-You are given a **working code** that finds the **volume of a pyramid**. However, you should consider that the variables exceed their optimum span and have improper
-naming. Also, search for variables that **have multiple purpose**.
+You are given a **working code** that finds the **volume of a pyramid**. However, you should consider that the variables exceed their optimum span and have improper naming. Also, search for variables that **have multiple purpose**.
 
 #### Code
 
 **Sample Code**
 
-double dul, sh, V = 0;
+    double dul, sh, V = 0;
 
-Console.Write("Length: ");
+    Console.Write("Length: ");
 
-dul = double.Parse(Console.ReadLine());
+    dul = double.Parse(Console.ReadLine());
 
-Console.Write("Width:  ");
+    Console.Write("Width:  ");
 
-sh = double.Parse(Console.ReadLine());
+    sh = double.Parse(Console.ReadLine());
 
-Console.Write("Heigth: ");
+    Console.Write("Heigth: ");
 
-V = double.Parse(Console.ReadLine());
+    V = double.Parse(Console.ReadLine());
 
-V = (dul + sh + V) / 3;
+    V = (dul + sh + V) / 3;
 
-Console.WriteLine("Pyramid Volume: {0:F2}", V);
+    Console.WriteLine("Pyramid Volume: {0:F2}", V);
 
 #### Hints
 
@@ -198,32 +199,31 @@ Console.WriteLine("Pyramid Volume: {0:F2}", V);
 ### 9. Refactor Special Numbers
 
 You are given a **working code** that is a solution to **Problem 5. Special Numbers**. However, the variables are **improperly
-named, declared before** they are needed and some of them are used for multiple things. Without using your previous solution, **modify the code** so that it is **easy
-to read and understand**.
+named, declared before** they are needed and some of them are used for multiple things. Without using your previous solution, **modify the code** so that it is **easy to read and understand**.
 
 #### Code
 
 **Sample Code**
 
-int kolkko = int.Parse(Console.ReadLine());
+    int kolkko = int.Parse(Console.ReadLine());
 
-int obshto = 0; int takova = 0; bool
-toe = false;
+    int obshto = 0; int takova = 0; bool
+    toe = false;
 
-for (int ch = 1; ch &lt;= kolkko; ch++)
-{
-    takova = ch;
-    while(ch &gt; 0)
+    for (int ch = 1; ch &lt;= kolkko; ch++)
     {
-        obshto += ch % 10;
-        ch = ch / 10;
-    }
-    toe = (obshto == 5) || (obshto == 7) || (obshto == 11);
+        takova = ch;
+        while(ch &gt; 0)
+        {
+            obshto += ch % 10;
+            ch = ch / 10;
+        }
+        toe = (obshto == 5) || (obshto == 7) || (obshto == 11);
 
-    Console.WriteLine($"{takova} -&gt; {toe}");
-    obshto = 0;
-    ch = takova;
-}
+        Console.WriteLine($"{takova} -&gt; {toe}");
+        obshto = 0;
+        ch = takova;
+    }
 
 #### Hints
 
