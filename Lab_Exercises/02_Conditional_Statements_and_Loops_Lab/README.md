@@ -21,7 +21,6 @@ The **output **is either "**Passed!**" if the grade is **equal or more than 3.00
 **Input** | **Output**
 --------- | ----------
 5.32      | Passed!
-**Input** | **Output**
 2.34      | _(no output)_
 
 ## Problem 2. Passed or Failed
@@ -41,14 +40,11 @@ The **output** is either "**Passed**!" if the grade is **more than 2.99**, other
 **Input** | **Output**
 --------- | ----------
 5.32      | Passed!
-**Input** | **Output**
 2.36      | Failed!
 
 ## Problem 3. Back in 30 Minutes
 
-Every time Stamat tries to pay his bills he sees on the cash desk the sign: **"****I will be back in 30 minutes"**. One day Stamat was sick of waiting and
-decided he needs a program, which **prints the time** after **30****minutes**.
-That way he won’t have to wait on the desk and come at the appropriate time. He gave the assignment to you, so you have to do it. 
+Every time Stamat tries to pay his bills he sees on the cash desk the sign: **"****I will be back in 30 minutes"**. One day Stamat was sick of waiting and decided he needs a program, which **prints the time** after **30****minutes**. That way he won’t have to wait on the desk and come at the appropriate time. He gave the assignment to you, so you have to do it. 
 
 #### Input
 
@@ -56,12 +52,12 @@ The **input** will be on two lines. On the **first****line**, you will receive t
 
 #### Output
 
-Print on the console the time after **30** minutes. The result should be in format **hh:mm**. The **hours** have **one or two****numbers** and
-the **minutes** have always **two numbers (with leading zero)**.
+Print on the console the time after **30** minutes. The result should be in format **hh:mm**. The **hours** have **one or two****numbers** and the **minutes** have always **two numbers (with leading zero)**.
 
 #### Constraints
 
 - The **hours** will be between **0 and 23**.
+
 - The **minutes** will be between **0 and 59**.
 
 #### Examples
@@ -70,23 +66,29 @@ the **minutes** have always **two numbers (with leading zero)**.
 --------- | ----------
 1         |2:16
 46        |
+
 **Input** | **Output**
+--------- | ----------
 0         | 0:31
 01        |
+
 **Input** | **Output**
+--------- | ----------
 23        | 0:29
 59        |
+
 **Input** | **Output**
+--------- | ----------
 11        | 11:38
 08        |
 **Input** | **Output**
+--------- | ----------
 11        | 12:02
 32        |
 
 #### Hints
 
-· Add 30 minutes to the initial minutes, which you receive from the console. If the minutes are more than 59 –
-increase the hours with 1 and decrease the minutes with 60. The same way check if the hours are more than 23. When you print check for leading zero.
+· Add 30 minutes to the initial minutes, which you receive from the console. If the minutes are more than 59 – increase the hours with 1 and decrease the minutes with 60. The same way check if the hours are more than 23. When you print check for leading zero.
 
 ## Problem 4. Month Printer
 
@@ -105,13 +107,11 @@ If the number is within the boundaries print the corresponding month, otherwise 
 **Input** | **Output**
 --------- | ----------
 2         | February
-**Input** | **Output**
 13        | Error!
 
 ## Problem 5. Foreign Languages
 
-Write a program, which prints the language, that a given country speaks. You can receive only the following combinations: English
-**is spoken** in England and USA; Spanish **is spoken** in Spain, Argentina and Mexico; for the others**,** we should print "unknown".
+Write a program, which prints the language, that a given country speaks. You can receive only the following combinations: English **is spoken** in England and USA; Spanish **is spoken** in Spain, Argentina and Mexico; for the others**,** we should print "unknown".
 
 #### Input
 
@@ -126,7 +126,6 @@ You will receive a **single country name **on a** single line**.
 **Input** | **Output**
 --------- | ----------
 USA       | English
-**Input** | **Output**
 Germany   | unknown
 
 #### Hint
@@ -135,8 +134,7 @@ Think how you can **merge** multiple cases, in order to **avoid** writing more c
 
 ## Problem 6. Theatre Promotions
 
-A theatre **is doing a ticket sale**, but they need a program** to** calculate the price of a single ticket. If the given age does
-not fit one of the categories**,** you should print "Error!".  You can see the prices i**n** the table below:
+A theatre **is doing a ticket sale**, but they need a program** to** calculate the price of a single ticket. If the given age does not fit one of the categories**,** you should print "Error!".  You can see the prices i**n** the table below:
 
 **Day / Age** | **0 &lt;= age &lt;= 18** | **18 &lt; age &lt;= 64** | **64 &lt; age &lt;= 122**
 ------------- | ------------------------ | ------------------------ | -------------------------
@@ -155,6 +153,7 @@ Print the price of the ticket according to the table, or "**Error!**" if the age
 #### Constraints
 
 - The age will be in the interval **[-1000…1000]**.
+
 - The type of day will **always be****valid**.
 
 #### Examples
@@ -163,13 +162,18 @@ Print the price of the ticket according to the table, or "**Error!**" if the age
 --------- | ----------
 Weekday   | 18$
 42
+
 **Input** | **Output**
+--------- | ----------
 Holiday   | Error!
 -12
 **Input** | **Output**
+--------- | ----------
 Holiday   | 5$
 15
+
 **Input** | **Output**
+--------- | ----------
 Weekend   | 15$
 122
 
@@ -177,22 +181,18 @@ Weekend   | 15$
 
 ##### Step 1. Read the Input
 
-We need to read **two** lines. **First** one will be the **type of day**. We will convert it to **lower case** letters with the method “**ToLower()**”. After that,
-we will read the **age** of the person and declare a **variable** – **price**, which we will use to set the price of the ticket.
+We need to read **two** lines. **First** one will be the **type of day**. We will convert it to **lower case** letters with the method “**ToLower()**”. After that, we will read the **age** of the person and declare a **variable** – **price**, which we will use to set the price of the ticket.
 
 ##### Step 2. Add if-else Statements for the Different Types of Day
 
 For every **type of day**, we will need to add **different cases** to check the **age** of the person and **set the price**.
-Some of the **age groups **have** equal****prices** for the** same type **of day. This means we can use **logical
-operators **to **merge some of the conditions**.
+Some of the **age groups **have** equal****prices** for the** same type **of day. This means we can use **logical operators **to **merge some of the conditions**.
 
 Think **where** and **how** you can use **logical operators** for the **other cases**.
 
 ##### Step 3. Print the result
 
-We can check if the price** has a value** different, than the **initial** one. It it does, that means we got a **valid combination of day and age**
-and the price of the ticket is saved in the price variable. If the price has a **value of 0**, then none of the cases got hit, therefore we have to**
-print the error message**.
+We can check if the price** has a value** different, than the **initial** one. It it does, that means we got a **valid combination of day and age** and the price of the ticket is saved in the price variable. If the price has a **value of 0**, then none of the cases got hit, therefore we have to** print the error message**.
 
 ## Problem 7. Divisible by 3
 
@@ -225,7 +225,9 @@ numbers.
 5
 7
 9
+
 **Input** | **Output**
+--------- | ----------
 3         | Sum: 9
 1
 3
@@ -257,6 +259,7 @@ Print every row of the table in the following format: {theInteger} X {times} = {
             5 X 8 = 40
             5 X 9 = 45
             5 X 10 = 50
+            
 **Input** | **Output**
 --------- | ----------
 2         | 2 X 1 = 2
@@ -273,8 +276,7 @@ Print every row of the table in the following format: {theInteger} X {times} = {
 ## Problem 10. Multiplication Table 2.0
 
 Rewrite you program so it can receive the **multiplier from the console**. Print the **table from the given multiplier to 10**.
-If the given multiplier is **more than 10** 
-- print only one row with the **integer**, the given **multiplier** and the **product**. See the examples below for more information.
+If the given multiplier is **more than 10** - print only one row with the **integer**, the given **multiplier** and the *product**. See the examples below for more information.
 
 #### Output
 
@@ -298,21 +300,24 @@ Print every row of the table in the following format: [{theInteger} X {times} = 
             5 X 8 = 40
             5 X 9 = 45
             5 X 10 = 50
+            
 **Input** | **Output**
+--------- | ----------
 2         | 2 X 5 = 10
 5         | 2 X 6 = 12
             2 X 7 = 14
             2 X 8 = 16
             2 X 9 = 18
             2 X 10 = 20
+            
 **Input** | **Output**
+--------- | ----------
 2         | 2 X 14 = 28
 14        |
 
 ## Problem 11. Odd Number
 
-Take as an input an **odd number** and print the **absolute value** of it. If the number is even, print **"**Please write an odd number.**"
-**and continue reading numbers.
+Take as an input an **odd number** and print the **absolute value** of it. If the number is even, print **"**Please write an odd number.**" **and continue reading numbers.
 
 #### Input
 
@@ -353,7 +358,6 @@ Print one of the messages, but without throwing an exception.
 **Input** | **Output**
 --------- | ----------
 5         | It is a number.
-**Input** | **Output**
 five      | Invalid input!
 
 #### Hints
