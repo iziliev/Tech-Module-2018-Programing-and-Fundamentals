@@ -290,7 +290,7 @@ Write a programthat replaces in a HTML document given as string **all the tags *
 
 **Input** | **Output**
 --------- | ----------
-[]()[]()[]()[&lt;ul&gt;]() | &lt;ul&gt;
+&lt;ul&gt; | &lt;ul&gt;
 
   &lt;li&gt;        | &lt;li&gt;
 
