@@ -12,34 +12,28 @@ Write a program that reads a string from the console, reverses it and prints the
 **Input** | **Output**
 --------- | ----------
 sample    | elpmas
-**Input** | **Output**
 24tvcoi92 | 29iocvt42
 
 ### 2. Count Substring Occurrences
 
-Write a program to **find how many times a given string appears in a given text as substring**. The text is given at the first input line. The search string is given at the second
-input line. The output is an integer number. Please ignore the **character casing**. **Overlapping** between occurrences is **allowed**.
+Write a program to **find how many times a given string appears in a given text as substring**. The text is given at the first input line. The search string is given at the second input line. The output is an integer number. Please ignore the **character casing**. **Overlapping** between occurrences is **allowed**.
 
 #### Examples
 
 **Input** | **Output**
 --------- | ----------
-**Wel**come to the Software University (SoftUni)! **Wel**come to programming. Programming is **wel**lness for developers, said Max**wel**l. | 4
+Welcome to the Software University (SoftUni)! **Wel**come to programming. Programming is **wel**lness for developers, said Maxwell. | 4
 wel
-**Input** | **Output**
-**aaaaaa** | 5
+aaaaaa | 5
 aa
-**Input** | **Output**
-**ababa** c**aba** | 3
+ababa caba | 3
 aba
-**Input** | **Output**
 Welcome to SoftUni | 0
 Java
 
 ### 3. Text Filter
 
-Write a program that takes a **text** and a**string of banned words**. All words included in the ban list should be replaced with **asterisks** "*****",
-equal to the word's length. The entries in the ban list will be separated by a **comma** and **space** "**, **".
+Write a program that takes a **text** and a**string of banned words**. All words included in the ban list should be replaced with **asterisks** "*****", equal to the word's length. The entries in the ban list will be separated by a **comma** and **space** "**, **".
 
 The ban list should be entered on the first input line and the text on the second input line. 
 
@@ -52,9 +46,7 @@ It is not **Linux**, it is GNU/**Linux**. **Linux** is merely the kernel, while 
 
 ### 4. Palindromes
 
-Write a program that extracts from a given text all palindromes, e.g. ABBA, lamal, exe and prints them on the console on a single line, separated by comma and
-space. Use spaces, commas, dots, question marks and exclamation marks as word delimiters. Print only **unique** palindromes, **sorted**
-lexicographically.
+Write a program that extracts from a given text all palindromes, e.g. ABBA, lamal, exe and prints them on the console on a single line, separated by comma and space. Use spaces, commas, dots, question marks and exclamation marks as word delimiters. Print only **unique** palindromes, **sorted** lexicographically.
 
 #### Examples
 
